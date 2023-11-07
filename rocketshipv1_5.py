@@ -2,6 +2,7 @@
 #rocketship1.py
 #very cool rocket text drawing thingy
 #not copyrighted !!
+#most time consuming non origional rocket version...
 
 #downward pattern after rocket ends and at top of rocket
 jetfuel = '''     /**\\
