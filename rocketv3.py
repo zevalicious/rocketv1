@@ -4,7 +4,7 @@
 #very cool rocket text drawing thingy
 #not copyrighted !!
 
-size=5
+size=6
 
 def upjet():
     for i in range(1, size+1):
@@ -26,23 +26,28 @@ def downjet():
             + "|")
 def split():
         print(("+")+("=*"* (size*2))+("+"))
-
+#jetfuel may not work with different sizes, mabye instead of six it should be size+1 or something? not sure. 
 def jetfuel():
-    for i in range(1, size+6):
+    for i in range(1, (size*2)+1):
         print(
             " " * ((size*2)-i)
             + "/" * (i)
             + "**"
             + "\\" * (i))
 
+def diamondbody():
+    upjet()
+    downjet()
+def hourglassbody():
+    downjet()
+    upjet()
+    
 
 #code
 jetfuel()
 split()
-upjet()
-downjet()
+diamondbody()
 split()
-downjet()
-upjet()
+hourglassbody()
 split()
 jetfuel()
