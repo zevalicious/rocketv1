@@ -1,4 +1,9 @@
 
+#zevical, 11/7/2023
+#rocketship1.py
+#very cool rocket text drawing thingy
+#not copyrighted !!
+
 size=5
 
 def upjet():
