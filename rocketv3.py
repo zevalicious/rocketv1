@@ -4,7 +4,8 @@
 #very cool rocket text drawing thingy
 #not copyrighted !!
 
-size=6
+size=8
+#size cannot = numbers that lead to text wrapping around the screen (for me its high 40's)
 
 def upjet():
     for i in range(1, size+1):
@@ -26,7 +27,7 @@ def downjet():
             + "|")
 def split():
         print(("+")+("=*"* (size*2))+("+"))
-#jetfuel may not work with different sizes, mabye instead of six it should be size+1 or something? not sure. 
+#jetfuel issue fixed 
 def jetfuel():
     for i in range(1, (size*2)+1):
         print(
