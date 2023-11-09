@@ -5,13 +5,7 @@
 #most time consuming non origional rocket version...
 
 #downward pattern after rocket ends and at top of rocket
-jetfuel = '''     /**\\
-    //**\\\\
-   ///**\\\\\\
-  ////**\\\\\\\\
- /////**\\\\\\\\\\'''
 
-jetfuel = ("/"*1)+("**")+("\\"*2)
 
 def jetfuel():
     print((" "*5)+("/"*1)+("**")+("\\"*1))
