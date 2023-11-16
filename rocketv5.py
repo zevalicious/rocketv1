@@ -4,12 +4,12 @@
 #very cool rocket text drawing thingy
 #not copyrighted !!
 #imput tester
-print("how large do you want your rocket to be")
-size = int(input())
-if (size>50):
-    size = 2
-    print("hiii, thats a big number buster. size<50!!")
 
+size=int(input("enter rocket size variable"))
+while size >25:
+    print("too big")
+    size=int(input("enter new size variable >25"))
+print("rocket size is", size)
 
 #size cannot = numbers that lead to text wrapping around the screen (for me its high 40's)
 
