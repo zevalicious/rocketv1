@@ -31,7 +31,7 @@ if shape.lower() == "cone":
         print("variables cannot be negative")
 
 
-if shape.lower().contains() == "cylinder":
+if "cy" in shape.lower():
     radius=float(input("enter radius of the cylinder"))
     height=float(input("enter height of the cylinder"))
     if radius>0 and height>0:
