@@ -2,7 +2,7 @@
 ans=2
 shape=(input('''Imput your variables for:generallized quadrilateral, rectangle, triangle, parallelagram, or trapazoid to calculate area'''))
 
-elif "gen" or "quad" in shape.lower():
+if "gen" or "quad" in shape.lower():
     print('''area of a quadrilateral is calculated by seperating the quadrilateral into
     two triangles split using the diagonal of the quadrilateral''')
     diagonal=float(input("enter diagonal of the quadrilateral"))
@@ -16,7 +16,7 @@ elif "gen" or "quad" in shape.lower():
         height2=(input("enter new height of triangle 2"))
         diaginal=(input("enter new length of diagonal"))
 
-elif "rect" or "par" or "squ" in shape.lower():
+if "rect" or "par" or "squ" in shape.lower():
     height=float(input("enter height or altitude"))
     base=float(input("enter base"))
     if height>0 and base>0:
