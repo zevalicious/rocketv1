@@ -20,11 +20,14 @@ if "gen" in shape.lower() or "quad" in shape.lower():
 
 
 if "rect" or "par" or "squ" in shape.lower():
-    height=float(input("enter height or altitude"))
-    base=float(input("enter base"))
-    if height>0 and base>0:
-        print("the volume of the rectangle with a diagonal of", diagonal, "is", (1/2)*diagonal*(height1+height2))
-    while height<0 or base<0:
+    
+    while True:
+        height=float(input("enter height or altitude"))
+        base=float(input("enter base"))
+        
+        if height>0 and base>0:
+            print("the volume of the rectangle with a diagonal of", diagonal, "is", (1/2)*diagonal*(height1+height2))
+        else:
         print("values must be a positive real numbers")
         height=(input("enter new height"))
         base=(input("enter new base"))
