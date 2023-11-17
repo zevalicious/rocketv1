@@ -1,7 +1,7 @@
 
 ans=2
 shape=(input('''Imput your variables for:generallized quadrilateral, rectangle, triangle, parallelagram, or trapazoid to calculate area'''))
-
+while shape.lower.contains != "gen" or shape.lower.contains != "quad" or shape.lower.contains != "rect" or shape.lower.contains != "sqa" or shape.lower.contains != "par":
 
 if "gen" in shape.lower() or "quad" in shape.lower():
     print('''The area of a quadrilateral is calculated by separating the quadrilateral into two triangles split using the diagonal of the quadrilateral.''')
