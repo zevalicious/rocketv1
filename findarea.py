@@ -3,8 +3,7 @@ ans=2
 shape=(input('''Imput your variables for:generallized quadrilateral, rectangle, triangle, parallelagram, or trapazoid to calculate area'''))
 
 if "gen" or "quad" in shape.lower():
-    print('''area of a quadrilateral is calculated by seperating the quadrilateral into
-    two triangles split using the diagonal of the quadrilateral''')
+    print('''area of a quadrilateral is calculated by seperating the quadrilateral into two triangles split using the diagonal of the quadrilateral''')
     diagonal=float(input("enter diagonal of the quadrilateral"))
     height1=float(input("enter height of triangle 1"))
     height2=float(input("enter height of triangle 2"))
