@@ -26,7 +26,7 @@ if shape.lower() == "cone":
     radius=float(input("enter radius of the cone"))
     height=float(input("enter height of the cone"))
     if radius>0 and height>0:
-        print("the volume of the sphere with a radius of", radius, "is", (height/3)*(PIE)*(radius**2))
+        print("the volume of the cone with a radius of", radius, "is", (height/3)*(PIE)*(radius**2))
     if radius<0 and height<0:
         print("variables cannot be negative")
 
