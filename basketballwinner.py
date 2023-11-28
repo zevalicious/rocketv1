@@ -14,12 +14,15 @@ bteamname=(input("enter second team's name"))
 bthreepointer=int(input("enter second team's # of three pointers"))
 btwopointer=int(input("enter second team's # of two pointers"))
 bonepointer=int(input("enter second team's # of free throws"))
+
 ateamtotal=((athreepointer*3) + (atwopointer*2) + (aonepointer))
 bteamtotal=((bthreepointer*3) + (btwopointer*2) + (bonepointer))
+
 if (ateamtotal>bteamtotal):
     print(ateamname, "won with a total of", ateamtotal, "and", bteamname,
           "lost with a total of", bteamtotal)
-          
-if (bteamtotal>ateamtotal):
+elif (bteamtotal>ateamtotal):
     print(bteamname, "won with a total of", bteamtotal, "and", ateamname,
           "lost with a total of", ateamtotal)
+else:
+    print("tie!!", ateamtotal, "nmbr of pts!!")
