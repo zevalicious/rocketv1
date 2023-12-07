@@ -16,3 +16,8 @@ print(ana['age'])
 ana['home'] = '124 apple ave'
 for key in ana.keys():
     print(f"ana's {key} is {ana[key]}.")
+ana.update({'job':'walmart employee'})
+ana.get('job')
+print(ana.get('spouse', "I don't know that info"))
+ana.pop('job')
+#removes job xd
