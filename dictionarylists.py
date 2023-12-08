@@ -10,14 +10,40 @@ lastfive = integers[-5:]
 intcopy = integers[:]
 intcopy.sort()
 lowfive=intcopy[:5]
-ana = {"name":'ana', 'height':64, 'age':16, 'hair':'brown', 'gender':'female'}
-print(ana)
-print(ana['age'])
-ana['home'] = '124 apple ave'
-for key in ana.keys():
-    print(f"ana's {key} is {ana[key]}.")
-ana.update({'job':'walmart employee'})
-ana.get('job')
-print(ana.get('spouse', "I don't know that info"))
-ana.pop('job')
+bailey = {"name":'bailey', 'height':69, 'age':16, 'hair':'brown', 'gender':'male'}
+print(bailey)
+print(bailey['age'])
+bailey['home'] = '124 apple ave'
+for key in bailey.keys():
+    print(f"bailey's {key} is {bailey[key]}.")
+bailey.update({'job':'walmart employee', "friends":['tod', 'will', 'john']})
+bailey.get('job')
+print(bailey.get('spouse',"I don't know that info"))
 #removes job xd
+bailey.pop('job')
+bailey['job'] = 'professional gambler'
+
+#import random
+
+#squarelist = []
+#x=0
+#for i in range(12):
+#    squarelist.append(i*i)
+#integers = []
+#y=0
+#for i in range(25):
+#    integers.append(i+1)
+
+#colors = ["red", 'blue', 'green', 'purple', 'yellow', 'orange', 'violet', 'white']
+
+#people = ['tom', 'jeremy', 'jacob', 'william', 'daniel']
+#height = []
+#z=0
+#for i in range(5):
+#    height.append(random.randint(60,73))
+#print(squarelist)
+#print(height)
+#print(integers)
+#for color in colors:
+#    if color == "yelljow":
+#        print("pinnaple")
