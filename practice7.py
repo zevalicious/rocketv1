@@ -13,6 +13,9 @@ lowfive=intcopy[:5]
 ana = {"name":'ana', 'height':64, 'age':16, 'hair':'brown', 'gender':'female'}
 print(ana)
 print(ana['age'])
-ana['home'] = '124 apple ave'
+ana['home'] = '124 apple ave' 
 for key in ana.keys():
     print(f"ana's {key} is {ana[key]}.")
+
+if ana['name'] == 'ana':
+    print("no no NO NO STOP THAT FEIND")
