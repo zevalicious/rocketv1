@@ -1,5 +1,5 @@
 import random
-startyen = 0
+startyen = 3
 while startyen > 5000 or startyen < 1000:
     startyen = int(input('enter amount of yuan that you are playing with total (integers only)'))
     if startyen > 5000 or startyen < 1000:
@@ -7,8 +7,8 @@ while startyen > 5000 or startyen < 1000:
 again = 'yes'
 bet = 9999999
 ans = 'var'
-while again == 'yes':
-    while bet >= startyen:
+while again == 'yes' and startyen > 0:
+    while bet > startyen:
         bet = int(input('how much would you like to bet? (integers only)'))
         if bet > startyen:
             print('please bet less than your total amount')
@@ -27,7 +27,15 @@ while again == 'yes':
     else:
         print('you lost')
         startyen -= bet
-    print(f'the number was {totalcount}!')
+    dictnum = {1:'ichi', 2:'ni', 3:'san', 4:'shi', 5:'go', 6:'roku'}
+    print(f'the numbers were {dictnum[dieone]} and {dictnum[dietwo]}!')
     print(f'you now have {startyen} yuan')
     again = input('do you want to go again? if so, type "yes"')
     ans = 'var'
+    if bet > startyen:
+        again = 'no'
+    else:
+        bet = 99999999
+
+if bet > startyen:
+    print(f'you no longer have enough to bet! you finished with {startyen} yuan!')
